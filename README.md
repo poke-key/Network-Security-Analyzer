@@ -34,7 +34,10 @@ To set up the project on your local machine, follow these steps:
 Windows: venv\Scripts\activate
 MacOS or UNIX: source venv/bin/activate
 
-4. Install required dependencies: pip install -r requirements.txt
+4. Install required dependencies: 
+
+    ```bash 
+    pip install -r requirements.txt
 
 ### Usage
 
