@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Security Analyzer</title>
+</head>
+<body>
+    <h1>Network Security Analyzer</h1>
+    <form action="/start-capture" method="post">
+        <button type="submit">Start Packet Capture</button>
+    </form>
+    <form action="/stop-capture" method="post">
+        <button type="submit">Stop Packet Capture</button>
+    </form>
+    <form action="/upload-pcap" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">Upload .pcap File</button>
+    </form>
+    <form action="/generate-report" method="post">
+        <button type="submit">Generate Report</button>
+    </form>
+</body>
+</html>
