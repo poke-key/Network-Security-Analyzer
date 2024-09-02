@@ -1,12 +1,12 @@
 from flask import Flask, render_template, request, redirect, url_for
-from src.packet_capture import start_packet_capture  # Adjust import paths based on your structure
+from src.packet_capture import start_packet_capture  #adjust import paths if needed
 from src.security_report import generate_security_report
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')  # Renders the main HTML page
+    return render_template('index.html')  #renders html page
 
 @app.route('/start-capture', methods=['POST'])
 def start_capture():
@@ -15,7 +15,7 @@ def start_capture():
 
 @app.route('/stop-capture', methods=['POST'])
 def stop_capture():
-    # Add logic to stop packet capture
+    #stop packet capture
     return redirect(url_for('index'))
 
 @app.route('/upload-pcap', methods=['POST'])
@@ -25,7 +25,7 @@ def upload_pcap():
     file = request.files['file']
     if file.filename == '':
         return 'No selected file'
-    # Handle file upload logic
+    #file upload logic processing
     return redirect(url_for('index'))
 
 @app.route('/generate-report', methods=['POST'])
