@@ -47,3 +47,15 @@ MacOS or UNIX: source venv/bin/activate
 
 The tool will capture a specified number of packets, analyze them, and generate a security report with details on IP addresses, TCP connections, port usage, and encryption status.
 
+## Contributing
+
+Contributions are welcome! Please submit a pull request or open an issue to discuss your ideas or improvements.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Scapy](https://scapy.net/) - Python library used for network packet capture and analysis.
+- [Npcap](https://nmap.org/npcap/) - Packet capture driver for Windows.
